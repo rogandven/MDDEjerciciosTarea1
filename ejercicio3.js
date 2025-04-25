@@ -2,7 +2,7 @@
 
 // Crea una función que reciba un nombre como parámetro y devuelva un saludo como string.
 
-function getGreeting(name) {
+function getGreeting(name = null) {
     if (typeof(name) != "string") {
         throw new TypeError("name expected, " + typeof(name) + " given");
     }

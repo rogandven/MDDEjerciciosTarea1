@@ -10,7 +10,7 @@ console.log("Nombre: " + v_name);
 console.log("Edad: " + v_age);
 console.log("Tiene mascotas: " + convertBooleanToSpanish(v_hasPets))
 
-function convertBooleanToSpanish(b) {
+function convertBooleanToSpanish(b = false) {
     if (b === true) {
         return "si";
     }

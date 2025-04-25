@@ -2,7 +2,7 @@
 
 // Crea un array de números y utiliza filter para obtener los números mayores a 5.
 
-function printArrayWithName (name, array) {
+function printArrayWithName (name = null, array = null) {
     if (typeof(name) != "string") {
         throw new TypeError("name expected, " + typeof(name) + " given");
     }

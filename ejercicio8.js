@@ -2,7 +2,7 @@
 
 // Crea un array de números y usa reduce para obtener la suma total.
 
-function printVariableWithName (name, variable) {
+function printVariableWithName (name = null, variable = null) {
     if (typeof(name) != "string") {
         throw new TypeError("name expected, " + typeof(name) + " given");
     }

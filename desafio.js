@@ -47,7 +47,7 @@ function createOrderObject (id = null, product = null, delivered = null, list = 
 
 async function checkOrderList (list = null) {
     if (!Array.isArray(list)) {
-        throw new TypeError("array expected" + typeof(list) + " given");
+        throw new TypeError("array expected, " + typeof(list) + " given");
     }
 
     let toPrint = null;
@@ -80,6 +80,6 @@ createOrderObject(0, "Minecraft for Nintendo Switch", true, list);
 createOrderObject(1, "Hotline Miami for PS4", false, list);
 createOrderObject(2, "Super Mario Sunshine for GameCube", true, list);
 createOrderObject(3, "Super Mario RPG for Super Nintendo", false, list);
-createOrderObject(4, "Doom Eternal for PS5 ", false, list);
+createOrderObject(4, "Doom Eternal for PS5", false, list);
 
 checkOrderList(list);

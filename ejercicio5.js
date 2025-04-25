@@ -1,6 +1,7 @@
 "use strict";
 
 // Crea un array de 3 números, multiplícalos por 2 y guárdalos en un nuevo array usando map.
+
 function printArrayWithName (name, array) {
     if (typeof(name) != "string") {
         throw new TypeError("name expected, " + typeof(name) + " given");
